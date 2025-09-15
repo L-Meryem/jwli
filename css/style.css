@@ -1,0 +1,527 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(42, 42, 42);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(69, 69, 69);
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+nav li:last-child {
+  background-color: rgb(44, 50, 66);
+  padding: 5px 40px;
+
+}
+
+nav .burger {
+  display: none;
+}
+
+nav li a {
+  color: white;
+}
+
+nav li {
+  align-self: center;
+}
+
+/*******************************************/
+
+.banner {
+  background-color: rgb(241, 243, 245);
+  display: flex;
+}
+
+.banner section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 40px 0;
+
+
+  & img {
+    height: 80px;
+    align-self: center;
+    margin-bottom: 16px;
+  }
+
+  & h1 {
+    font-size: 2.1rem;
+    margin: 10px 0;
+  }
+
+}
+
+div {
+  align-self: center;
+  width: 80%;
+}
+
+input[type="email"],
+input[type="submit"] {
+  width: 50%;
+  padding: 10px 5px;
+  border: 1px solid rgb(183, 183, 183);
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 25%;
+  background-color: rgb(186, 197, 206);
+  border: 1px solid blue;
+  margin-left: 10px;
+}
+
+.banner p {
+  width: 500px;
+}
+
+.banner p+p {
+  font-size: .8rem;
+  margin: 30px 0 10px 0;
+}
+
+.banner section+section {
+  flex: 1;
+  background: url("../assets/woman.png")center/contain no-repeat;
+
+}
+
+/*******************************************/
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.goal h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.goal>p:last-child {
+  color: rgb(127, 127, 127);
+  margin-top: 30px;
+}
+
+.goal section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goal section p {
+  border-top: 3px solid pink;
+  border-image: linear-gradient(to right, pink 50%, transparent 50%) 1;
+  display: block;
+  /* flex:1; */
+  width: 40%;
+  line-height: 1.4;
+  padding-top: 10px;
+}
+
+.goal>p {
+  width: 80%;
+  text-align: center;
+}
+
+/*******************************************/
+
+.history {
+  background-color: rgb(241, 243, 245);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.history h3 {
+  font-size: 1.8rem;
+  color: #242424;
+  margin: 10px 0;
+}
+
+.history section:first-child {
+  flex: 1.8;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.history p,
+.who p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  align-self: start;
+  ;
+}
+
+.history section+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.history img {
+  width: 100%;
+}
+
+.history span {
+  color: rgb(169, 169, 169);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.history span:first-of-type {
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+
+/*******************************************/
+
+.who {
+  margin-bottom: 50px;
+}
+
+.who section>img {
+  width: 20%;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.who h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #242424;
+  margin: 30px 0;
+}
+
+.who>section {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.who .founder {
+  border: 1px solid rgb(193, 193, 193);
+  padding: 20px;
+}
+
+.who section section {
+  padding: 20px;
+}
+
+.who .others {
+  margin-top: 40px;
+  display: grid;
+  grid-template: 40px 1fr / 1fr 1fr;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.who h4 img {
+  height: 30px;
+}
+
+.who h4 {
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.who p {
+  margin-top: 16px;
+  text-align: justify;
+}
+
+.floated {
+  display: none;
+}
+
+/*******************************************/
+
+
+footer {
+  background-color: rgb(145, 156, 162);
+}
+
+footer a,
+footer p {
+  color: white;
+}
+
+footer .top {
+  background-color: rgb(186, 197, 207);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+footer .top form {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer input[type="email"] {
+  width: 80%;
+  margin-right: 10px;
+
+}
+
+footer input[type="submit"] {
+  width: 30%;
+  border: none;
+  background-color: rgb(145, 156, 162);
+  color: white;
+  font-size: 1.1rem;
+}
+
+footer input::placeholder {
+  color: rgb(208, 208, 208);
+}
+
+footer .top h4 {
+  color: white;
+  font-size: 1.4rem;
+}
+
+
+footer .bottom {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+footer .bottom section:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bottom section:first-child ul {
+  display: flex;
+  justify-content: space-between;
+  /* width: 20%; */
+}
+
+
+footer .bottom section+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bottom section+section ul:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+footer .bottom section:first-child {
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+footer .bottom ul li {
+  padding: 3px 10px;
+}
+
+/*******************************************/
+
+@media screen and (max-width:1024px) {
+  .history {
+    flex-direction: column;
+  }
+
+  .history img {
+    width: 100%;
+  }
+
+  .history section+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .history div {
+    align-self: center;
+    width: 40%;
+  }
+
+  .history span {
+    display: block;
+    text-align: center;
+  }
+
+  .who .founder img {
+    display: none;
+  }
+
+  .who .founder .floated {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  .who>section>section {
+    width: 80%;
+    margin: auto;
+
+  }
+
+}
+
+@media screen and (max-width:842px) {
+
+  .banner section+section {
+    background-image: none;
+    flex: 0;
+  }
+
+  .goal,
+  .who>section>section {
+    width: 90%;
+  }
+
+  footer .top form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .who .others {
+    grid-template-columns: 1fr;
+  }
+
+  .who h4+h4 {
+    grid-row: 3/4;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  nav .burger,
+  nav ul li:last-child {
+    display: block;
+  }
+
+  nav .burger img {
+    width: 50px;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .goal section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goal section p {
+    margin-bottom: 50px;
+    width: 80%;
+  }
+
+  .history div {
+    width: 70%;
+  }
+
+  .banner p {
+    width: 100%;
+  }
+
+  .who .others {
+    width: 80%;
+  }
+
+  .history section+section,
+  footer .bottom section+section ul:last-child,
+  footer .bottom section:first-child {
+    flex-direction: column;
+  }
+
+  footer p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:660px) {
+
+  footer .bottom section+section,
+  footer .top {
+    flex-direction: column;
+  }
+
+  footer .bottom section+section ul,
+  footer .top h4 {
+    margin-bottom: 20px;
+  }
+
+  footer .top form {
+    width: 95%;
+  }
+
+  .who>section>section {
+    padding: 10px;
+  }
+
+  footer .bottom section:first-child ul {
+    flex-direction: column;
+  }
+
+  footer .top form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer input[type="submit"] {
+    width: 80%;
+    align-self: center;
+
+
+  }
+
+  footer input[type="email"] {
+    width: 80%;
+    margin-left: 17px;
+    align-self: center;
+  }
+
+  .history{
+    padding: 20px 20px;
+  }
+
+  .goal, .who>section>section{
+    width: 100%;
+  }
+
+}
