@@ -210,6 +210,7 @@ input[type="submit"] {
   width: 20%;
   padding: 20px;
   object-fit: cover;
+  min-width: 200px;
 }
 
 .who h3 {
@@ -516,11 +517,12 @@ footer .bottom ul li {
     align-self: center;
   }
 
-  .history{
+  .history {
     padding: 20px 20px;
   }
 
-  .goal, .who>section>section{
+  .goal,
+  .who>section>section {
     width: 100%;
   }
 
